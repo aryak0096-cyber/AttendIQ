@@ -1,19 +1,25 @@
-AttendIQ - IMED BCA Sem V
+AttendIQ - Attendance Management and Academic Risk System
+BCA Sem V (Div. A), IMED Pune
 
-SETUP (once, needs internet)
-1. Extract this whole ZIP.
-2. Double-click Setup_AttendIQ.bat
-   It creates the folder Desktop\AttendIQ, installs everything and adds a Desktop shortcut.
-   If Windows says "protected your PC", click More info, then Run anyway.
+How to run (Windows)
 
-RUN
-Double-click the AttendIQ shortcut on the Desktop. The browser opens at http://localhost:8501.
-Keep the black window open while using the app. Close it to stop the app.
+1. Make sure Python is installed (3.10 or newer).
 
-LOGIN
-Admin password: admin
-Student view: choose a Roll No (BCA24001 - BCA24015)
+2. Open this folder, type cmd in the address bar and press Enter.
 
-IF SOMETHING GOES WRONG
-- Data looks wrong: delete the .db file inside Desktop\AttendIQ and start again.
-- Port busy: close other AttendIQ windows and retry.
+3. Install the libraries:
+
+   pip install -r requirements.txt
+
+4. Start the app:
+
+   streamlit run app.py
+
+It will open in the browser at http://localhost:8501
+
+Login
+Admin password is: admin
+For the student view, just pick a roll number from the list.
+
+Note: the data in the app is sample data and the ML model is trained on simulated records.
+
